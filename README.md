@@ -16,6 +16,16 @@
 - são executados no lado do servidor e geram respostas dinâmicas para solicitações HTTP.
 - podem lidar com solicitações, processar dados e interagir com bancos de dados e outras partes do aplicativo.
 
+<hr>
+
+## Servlets - Sintaxe dos elementos:
+
+- Scriplet: <%   %>
+- Comentários:  <%--   --%>
+- Diretivas:  <%@   %>
+- Declarações:  <%!   %>
+- Expressões:  <%=   %>
+
 <br>
 
 ## JSP (JavaServer Pages):
@@ -34,5 +44,7 @@
 - PostgreSQL
 
 <br>
+
+
 
  
