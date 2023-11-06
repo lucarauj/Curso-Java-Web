@@ -19,4 +19,3 @@ create table contatos (
 	email varchar(50)
 );
 ```
-	
