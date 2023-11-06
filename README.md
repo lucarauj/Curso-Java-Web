@@ -1,4 +1,10 @@
-# Java Web
+# Curso Java Web
+
+<br>
+
+## Projeto Agenda de Contatos:
+
+[Clique aqui!]()
 
 <br>
 
@@ -33,12 +39,6 @@
 - é uma tecnologia Java para criar páginas da web dinâmicas.
 - permite que os desenvolvedores incorporem código Java em páginas HTML para gerar conteúdo dinâmico.
 - é uma alternativa às Servlets para criar interfaces de usuário web mais facilmente.
-
-<br>
-
-## Projeto Agenda de Contatos:
-
-[Clique aqui!]()
 
 <br>
 
