@@ -36,12 +36,9 @@
 
 <br>
 
-## Tecnologias utilizadas
+## Projeto Agenda de Contatos:
 
-- JDK (Java Development Kit)
-- Eclipse IDE
-- Apache tomcat
-- PostgreSQL
+[Clique aqui!]()
 
 <br>
 
