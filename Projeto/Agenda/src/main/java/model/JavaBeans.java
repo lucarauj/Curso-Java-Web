@@ -14,8 +14,9 @@ public class JavaBeans {
 		this.email = email;
 	}
 	
-	public JavaBeans() {}
-	
+	public JavaBeans() {
+		super();
+	}
 	
 	public String getIdcon() {
 		return idcon;
