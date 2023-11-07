@@ -3,9 +3,11 @@ package model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class DAO {
-	
+
 	private String driver = "org.postgresql.Driver";
 	private String url = "jdbc:postgresql://localhost:5432/agenda";
 	private String user = "postgres";
@@ -22,7 +24,7 @@ public class DAO {
 			return null;
 		}
 	}
-	
+
 	public void inserirContato(JavaBeans contato) {
 		String create = "insert into contatos(nome, fone, email) values (?,?,?)";
 		try {
@@ -37,7 +39,29 @@ public class DAO {
 			System.out.println(e);
 		}
 	}
-	
+
+	public ArrayList<JavaBeans> listarContatos() {
+		ArrayList<JavaBeans> contatos = new ArrayList<>();
+		String read = "select * from contatos order by nome";
+		try {
+			Connection con = conectar();
+			PreparedStatement pst = con.prepareStatement(read);
+			ResultSet rs = pst.executeQuery();
+			while(rs.next()) {
+				String idcon = rs.getString(1);
+				String nome = rs.getString(2);
+				String fone = rs.getString(3);
+				String email = rs.getString(4);
+				contatos.add(new JavaBeans(idcon, nome, fone, email));
+			}
+			con.close();
+			return contatos;
+		} catch (Exception e) {
+			System.out.println(e);
+			return null;
+		}
+	}
+
 //	public void testeConexao() {
 //		try {
 //			Connection con = conectar();

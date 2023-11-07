@@ -1,12 +1,15 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import model.DAO;
 import model.JavaBeans;
 
@@ -38,7 +41,10 @@ public class Controller extends HttpServlet {
 	}
 	
 	protected void contatos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.sendRedirect("agenda.jsp");
+		ArrayList<JavaBeans> lista = dao.listarContatos();
+		request.setAttribute("contatos", lista);
+		RequestDispatcher rd = request.getRequestDispatcher("agenda.jsp");
+		rd.forward(request, response);
 	}
 	
 	protected void novoContato(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,5 +54,6 @@ public class Controller extends HttpServlet {
 		dao.inserirContato(contato);
 		response.sendRedirect("main");
 	}
-
+	
+	
 }
