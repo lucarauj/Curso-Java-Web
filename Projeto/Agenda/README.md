@@ -2,6 +2,10 @@
 
 <br>
 
+<h2 align="center">
+  <img width="250px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/estrutura.png">
+</h2>
+
 <br>
 
 ## Tecnologias utilizadas
