@@ -6,13 +6,29 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DAO.
+ */
 public class DAO {
 
+	/** The driver. */
 	private String driver = "org.postgresql.Driver";
+	
+	/** The url. */
 	private String url = "jdbc:postgresql://localhost:5432/agenda";
+	
+	/** The user. */
 	private String user = "postgres";
+	
+	/** The password. */
 	private String password = "12345";
 
+	/**
+	 * Conectar.
+	 *
+	 * @return the connection
+	 */
 	private Connection conectar() {
 		Connection con = null;
 		try {
@@ -25,6 +41,11 @@ public class DAO {
 		}
 	}
 
+	/**
+	 * Inserir contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void inserirContato(JavaBeans contato) {
 		String create = "insert into contatos(nome, fone, email) values (?,?,?)";
 		try {
@@ -40,6 +61,11 @@ public class DAO {
 		}
 	}
 
+	/**
+	 * Listar contatos.
+	 *
+	 * @return the array list
+	 */
 	public ArrayList<JavaBeans> listarContatos() {
 		ArrayList<JavaBeans> contatos = new ArrayList<>();
 		String read = "select * from contatos order by nome";
@@ -62,6 +88,11 @@ public class DAO {
 		}
 	}
 
+	/**
+	 * Selecionar contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void selecionarContato(JavaBeans contato) {
 		String read = "select * from contatos where idcon = ?";
 		try {
@@ -82,6 +113,11 @@ public class DAO {
 		}
 	}
 	
+	/**
+	 * Alterar contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void alterarContato(JavaBeans contato) {
 		String alter = "update contatos set nome=?, fone=?, email=? where idcon=?";
 		try {
@@ -100,6 +136,11 @@ public class DAO {
 		}
 	}
 	
+	/**
+	 * Deletar contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void deletarContato(JavaBeans contato) {
 		String delete = "delete from contatos where idcon = ?";
 		try {
@@ -125,3 +166,5 @@ public class DAO {
 //		}
 //	}
 }
+
+
