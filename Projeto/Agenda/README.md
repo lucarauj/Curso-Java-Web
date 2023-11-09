@@ -38,7 +38,8 @@ create table contatos (
 ## Relatório gerado
 
 <h2 align="left">
-  <img width="200px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/diversos/relatorio">
+  <img width="700px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/relatorio.png">
+                   	
 </h2>
 
 <br>
