@@ -15,7 +15,7 @@
 - iText
 - HTML, CSS, JavaScript
 
-## Criando a tabela de contatos
+## Criando a tabela de contatos no PostgreSQL
 
 ```
 create table contatos (
