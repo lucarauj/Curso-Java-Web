@@ -3,7 +3,7 @@
 <br>
 
 <h2 align="center">
-  <img width="250px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/estrutura.png">
+  <img width="550px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/estrutura.png">
 </h2>
 
 <br>
@@ -18,6 +18,8 @@
 - JDBC(Java Database Connectivity)
 - iText
 - HTML, CSS, JavaScript
+
+<br>
 
 ## Criando a tabela de contatos no PostgreSQL
 
