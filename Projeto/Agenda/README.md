@@ -1,8 +1,6 @@
 # Projeto Agenda de Contatos
 
-<br>
-
-<h2 align="center">
+<h2 align="left">
   <img width="550px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/estrutura.png">
 </h2>
 
@@ -31,6 +29,17 @@ create table contatos (
 	email varchar(50)
 );
 ```
+<h2 align="left">
+  <img width="200px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/Diagrama-db.png">
+</h2>
+
+<br>
+
+## Relatório gerado
+
+<h2 align="left">
+  <img width="200px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/diversos/relatorio">
+</h2>
 
 <br>
 
