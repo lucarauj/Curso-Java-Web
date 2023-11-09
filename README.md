@@ -1,4 +1,6 @@
-# Curso Java Web
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/lucarauj/Curso-Java-Web/blob/main/LICENSE)
+
+<h1 align="center">Curso Java Web: Servlet & JSP</h1>
 
 <h2 align="center">
   <img width="250px" src="https://github.com/lucarauj/Curso-Java-Web/blob/main/Projeto/Agenda/src/main/webapp/images/java-servlet-jsp.png">
